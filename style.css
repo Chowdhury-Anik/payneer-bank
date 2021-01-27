@@ -1,0 +1,42 @@
+    body {
+        padding: 100px;
+    }
+    
+    .submit-area {
+        margin-top: 50px;
+        box-shadow: 5px 5px 5px 5px rgb(231, 229, 229);
+        border-radius: 10px;
+        padding: 40px;
+    }
+    
+    #transaction-area {
+        display: none;
+    }
+    
+    .deposit {
+        background-color: rgb(38, 0, 255);
+    }
+    
+    .withdraw {
+        background-color: orangered;
+    }
+    
+    .blance {
+        background-color: rgb(32, 124, 9);
+    }
+    
+    .size {
+        margin: 0 10px;
+        border-radius: 10px;
+        color: white;
+        padding: 10px;
+    }
+    
+    .trans-area {
+        color: rgb(27, 36, 24);
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    .buton-padding {
+        margin-top: 15px;
+    }
