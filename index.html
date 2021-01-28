@@ -79,9 +79,13 @@
             // deposit button event handler
         const depositBtn = document.getElementById('depositButton');
         depositBtn.addEventListener('click', function() {
+            //deposit number calling by function getInputNumber
+            const depositNumber = getInputNumber("depositAmount");
 
-            const depositAmount = document.getElementById('depositAmount').value;
-            const depositNumber = parseFloat(depositAmount);
+            // const depositAmount = document.getElementById('depositAmount').value;
+            // const depositNumber = parseFloat(depositAmount);
+
+
             //current deposit section
             // const currentDeposit = document.getElementById('currentDeposit').innerText;
             // const currentDepositNumber = parseFloat(currentDeposit);
@@ -110,9 +114,9 @@
 
         // withdraw function
         function getInputNumber(id) {
-            const withdrawAmount = document.getElementById(id).value;
-            const withdrawNumber = parseFloat(withdrawAmount);
-            return withdrawNumber;
+            const Amount = document.getElementById(id).value;
+            const amountNumber = parseFloat(Amount);
+            return amountNumber;
 
         }
 
