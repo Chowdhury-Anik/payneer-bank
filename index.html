@@ -35,7 +35,7 @@
             <div class="col-md-4">
                 <div class="withdraw size">
                     <h5>Withdraw</h5>
-                    <h2>$00</h2>
+                    <h2>$<span>00</span></h2>
                 </div>
             </div>
             <div class="col-md-4">
@@ -98,20 +98,24 @@
             document.getElementById('depositAmount').value = "";
         })
 
-        // withdraw button event handler 
-        // const withdrawBtn = document.getElementById('addWithdraw');
-        // withdrawBtn.addEventListener("click", function() {
-        // const withdrawAmount = document.getElementById("withdrawAmount").value;
-        // const withdrawNumber = parseFloat(withdrawAmount);
-        // const withdrawNumber = getInputNumber('withdrawAmount');
-        // const withdrawNumber = parseFloat(withdrawAmount);
-        // });
+        //withdraw button event handler
+        const withdrawBtn = document.getElementById("addWithdraw");
+        withdrawBtn.addEventListener("click", function() {
+            const withdrawNumber = getInputNumber("withdrawAmount");
+            console.log(withdrawNumber);
+        })
+
+
+
+
         // withdraw function
-        // function getInputNumber(id) {
-        //     const Amount = document.getElementById(id).value;
-        //     const amountNumber = parseFloat(Amount);
-        //     return amountNumber;
-        // }
+        function getInputNumber(id) {
+            const withdrawAmount = document.getElementById(id).value;
+            const withdrawNumber = parseFloat(withdrawAmount);
+            return withdrawNumber;
+
+        }
+
         // deposit and total balance function
         function updateSpanText(id, depositNumber) {
             const current = document.getElementById(id).innerText;
